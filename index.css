@@ -10,17 +10,57 @@ header div{
     display: flex;
 }
 #refresh {
-    width: 50px;
-    background-size: cover;
+    transition: 0.5s;
+    height: 65.4px;
+    width: 100px;
+    margin: 5px;
+    background-size: contain;
+    background-repeat: no-repeat;
     background-image: url(IMAGENES/logo.jpg);
 }
+#refresh:hover{
+    transform: scale(1.2);
+}
 #menunormal{
+    justify-content: center;
+    text-align: center;
+    margin-left: 25px;
+    margin: 5px;
     display: flex;
     background-color: transparent;
     font-size: 15px;
+}
+#menunormal ul {
+    
+    justify-content: center;
+    text-align: center;
+    margin-top: 15px;
+    margin-left: 20px;
+    display: flex;
     list-style: none;
 }
-#menudesplegable {
+#menunormal ul li {
+    justify-content: center;
+    text-align: center;
+    transition: 0.5s;
+    margin-left: 50px;
+}
+#menunormal ul li:hover{
+    transform: scale(1.1);
+    background-color: rgb(51, 151, 85);
+    opacity: 80%;
+}
+#menunormal ul li a{
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font: 20px arial,sans-serif;
+}
+#menunormal ul li a:hover{
+    color: blue;
+}
+#menudesplegable{
     display: none;
 }
 header {
@@ -28,12 +68,32 @@ header {
 }
 
 #caja{
+    margin-top: 10%;
     display: flex;
     max-width: 100%;
     justify-content: center;
     padding: 5%;
     position: relative; 
 ;
+}
+#flotar{
+    margin-top: 10%;
+    float: right;
+}
+#masinformacion {
+    font-size: 25px;
+    transition: 0.5s;
+    border-radius: 20%;
+    height: 100px;
+    width: 300px;
+    margin-top: 15px;
+    margin-left: 100px;
+    border: none;
+    background-image: linear-gradient(to right,#0e2c20,#438671);
+}
+#masinformacion:hover{
+    color: white;
+    transform: scale(1.2);
 }
 #titulo, p{
    
@@ -61,8 +121,7 @@ img{
     
 }
 @media (max-width=720px){
-
-    #menudesplegable{
+    #menudesplegable img{
         background-color: transparent;
         display: block;
     }
