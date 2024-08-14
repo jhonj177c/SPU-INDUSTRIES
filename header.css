@@ -1,0 +1,75 @@
+header div{
+    display: flex;
+}
+#refresh {
+    transition: 0.5s;
+    height: 65.4px;
+    width: 100px;
+    margin: 5px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(IMAGENES/logo.jpg);
+}
+#refresh:hover{
+    transform: scale(1.2);
+}
+#menunormal{
+    justify-content: center;
+    text-align: center;
+    margin-left: 25px;
+    margin: 5px;
+    display: flex;
+    background-color: transparent;
+    font-size: 15px;
+}
+#menunormal ul {
+    
+    justify-content: center;
+    text-align: center;
+    margin-top: 15px;
+    margin-left: 20px;
+    display: flex;
+    list-style: none;
+}
+#menunormal ul li {
+    justify-content: center;
+    text-align: center;
+    transition: 0.5s;
+    margin-left: 50px;
+}
+#menunormal ul li:hover{
+    transform: scale(1.1);
+    background-color: rgb(51, 151, 85);
+    opacity: 80%;
+}
+#menunormal ul li a{
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font: 20px arial,sans-serif;
+}
+#menunormal ul li a:hover{
+    color: blue;
+}
+#menudesplegable{
+    display: none;
+}
+header {
+    background-color:transparent ;
+}
+
+@media (max-width=720px){
+    #menudesplegable img{
+        background-color: transparent;
+        display: block;
+    }
+    #menunormal{
+        display: none;
+    }
+}
+@media (max-width=1100px){
+    body {
+        background-color: rgb(35, 124, 124);
+    }
+}
