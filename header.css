@@ -8,7 +8,7 @@ header div{
     margin: 5px;
     background-size: contain;
     background-repeat: no-repeat;
-    background-image: url(IMAGENES/logo.jpg);
+    background-image: url(IMAGENES/logo.png);
 }
 #refresh:hover{
     transform: scale(1.2);
